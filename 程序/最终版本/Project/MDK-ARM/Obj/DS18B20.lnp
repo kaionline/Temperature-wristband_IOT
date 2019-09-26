@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\obj\main.o"
+".\obj\stm32f10x_it.o"
+".\obj\delay.o"
+".\obj\usart.o"
+".\obj\ds18b20.o"
+".\obj\misc.o"
+".\obj\stm32f10x_dbgmcu.o"
+".\obj\stm32f10x_exti.o"
+".\obj\stm32f10x_fsmc.o"
+".\obj\stm32f10x_gpio.o"
+".\obj\stm32f10x_pwr.o"
+".\obj\stm32f10x_sdio.o"
+".\obj\stm32f10x_flash.o"
+".\obj\stm32f10x_rcc.o"
+".\obj\stm32f10x_usart.o"
+".\obj\core_cm3.o"
+".\obj\system_stm32f10x.o"
+".\obj\startup_stm32f10x_hd.o"
+".\obj\beep.o"
+".\obj\sys.o"
+--library_type=microlib --strict --scatter ".\Obj\DS18B20.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\List\DS18B20.map" -o .\Obj\DS18B20.axf
